@@ -27,8 +27,8 @@ from ._base import BaseRepo  # noqa
 from ._base import fix_pkg_config  # noqa
 
 # Imported for backwards compatibility with plugins
-if _platform._is_deb_based():
-    from ._deb import Ubuntu  # noqa
+#if _platform._is_deb_based():
+#    from ._deb import Ubuntu  # noqa
 
 Repo = _platform._get_repo_for_platform()
 
