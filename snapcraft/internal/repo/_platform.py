@@ -34,11 +34,10 @@ def _is_deb_based(distro=None):
 
 
 def _get_repo_for_platform():
-    if _is_deb_based():
-        from ._deb import Ubuntu
+    #if _is_deb_based():
+    #    from ._deb import Ubuntu
 
-        return Ubuntu
-    else:
-        from ._base import DummyRepo
-
-        return DummyRepo
+    #    return Ubuntu
+    #else:
+    from ._base import DummyRepo
+    return DummyRepo
